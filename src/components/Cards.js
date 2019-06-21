@@ -2,6 +2,7 @@ import React from 'react';
 import {makeStyles} from '@material-ui/styles';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import Journalist from '../images/journalist.png'
 
 
 import Card from '@material-ui/core/Card';
@@ -29,6 +30,23 @@ const useStyles = makeStyles({
     justifyContent: 'space-around',
     alignItems: 'stretch'
   },
+  journalist_div: {
+    width: '100%',
+    height: 100,
+    display: 'flex'
+  },
+  journalist_img: {
+    height: '50%',
+    position: 'absolute',
+    left: 0,
+    top: 40
+  },
+  journalist_text: {
+    height: 30,
+    color: 'white',
+    margin: '0 auto',
+    fontWeight: 100
+  }
 });
 
 
@@ -49,6 +67,10 @@ const Facts = () => {
 
   return (
     <div className={classes.cards}>
+      <div className={classes.journalist_div}>
+        <img className={classes.journalist_img}src={Journalist} alt="Logo" />
+        <h2 className={classes.journalist_text}>Let me tell you some facts about the cutest animals in the World</h2>
+      </div>
       {catFacts.map(fact => {
 
         return (

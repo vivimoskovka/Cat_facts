@@ -6,7 +6,7 @@ require('typeface-neucha')
 const useStyles = makeStyles({
   header: {
     width: '90%',
-    height: 200,
+    height: 120,
     paddingTop: 10,
     margin: '0 auto'
   },
@@ -26,12 +26,13 @@ const useStyles = makeStyles({
     fontWeight: 100,
     fontSize: 14,
     color: 'white',
-    margin: 0
+    marginTop: -10,
+    letterSpacing: 5
   },
   following: {
     color: 'white',
     textTransform: 'uppercase',
-    fontSize: 14,
+    fontSize: 12,
     height: 25,
     alignItems: 'center',
     textAlign: 'left'
@@ -47,7 +48,7 @@ const useStyles = makeStyles({
   instalogo:{
     width: 40,
     height:40,
-    marginTop: 5,
+    marginTop: 0,
     marginLeft: 10
   }
 
